@@ -180,9 +180,9 @@ export default function Home() {
 
   return (
     <main className="min-h-screen p-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div className="max-w-7xl h-full mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
         {/* Left */}
-        <div className="bg-primary-main shadow-sm rounded-xl p-6">
+        <div className="bg-primary-main h-full shadow-sm rounded-xl p-6">
           {/* Search Bar */}
           <div className="relative mb-8">
             <input
@@ -361,7 +361,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {/* UV Index */}
-            <div className="bg-primary-main p-6 h-[7rem] rounded-xl shadow-sm">
+            <div className="bg-primary-main p-6 h-[8rem] rounded-xl shadow-sm">
               <h3 className="text-gray-400 mb-2">UV Index</h3>
               <div className="text-2xl sm:text-3xl font-bold text-gray-100">
                 {weatherData?.current?.uv}
@@ -369,7 +369,7 @@ export default function Home() {
             </div>
 
             {/* Wind Status */}
-            <div className="bg-primary-main p-6 h-[7rem] rounded-xl shadow-sm">
+            <div className="bg-primary-main p-6 h-[8rem] rounded-xl shadow-sm">
               <h3 className="text-gray-400 mb-2">Wind Status</h3>
               <div className="text-2xl sm:text-3xl font-bold text-gray-100">
                 {weatherData?.current?.wind_kph}
@@ -378,7 +378,7 @@ export default function Home() {
             </div>
 
             {/* Sunrise & Sunset */}
-            <div className="bg-primary-main p-6 h-[7rem] rounded-xl shadow-sm">
+            <div className="bg-primary-main p-6 h-[8rem] rounded-xl shadow-sm">
               <h3 className="text-gray-400 mb-2">Pressure</h3>
               <div className="text-2xl sm:text-3xl font-bold text-gray-100">
                 {weatherData?.current?.pressure_in}
@@ -386,7 +386,7 @@ export default function Home() {
             </div>
 
             {/* Humidity */}
-            <div className="bg-primary-main p-6 h-[7rem] rounded-xl shadow-sm">
+            <div className="bg-primary-main p-6 h-[8rem] rounded-xl shadow-sm">
               <h3 className="text-gray-400 mb-2">Humidity</h3>
               <div className="text-2xl sm:text-3xl font-bold text-gray-100">
                 {weatherData?.current?.humidity}
@@ -395,7 +395,7 @@ export default function Home() {
             </div>
 
             {/* Visibility */}
-            <div className="bg-primary-main p-6 h-[7rem] rounded-xl shadow-sm">
+            <div className="bg-primary-main p-6 h-[8rem] rounded-xl shadow-sm">
               <h3 className="text-gray-400 mb-2">Visibility</h3>
               <div className="text-2xl sm:text-3xl font-bold text-gray-100">
                 {weatherData?.current?.vis_km}
@@ -404,7 +404,7 @@ export default function Home() {
             </div>
 
             {/* Air Quality */}
-            <div className="bg-primary-main p-6 h-[7rem] rounded-xl shadow-sm">
+            <div className="bg-primary-main p-6 h-[8rem] rounded-xl shadow-sm">
               <h3 className="text-gray-400 mb-2">Cloud</h3>
               <div className="text-2xl sm:text-3xl font-bold text-gray-100">
                 {weatherData?.current?.cloud}

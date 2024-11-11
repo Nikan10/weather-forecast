@@ -74,7 +74,7 @@ const Wishlist = () => {
                   </div>
 
                   <div className="mt-8">
-                    <h1 className="text-5xl sm:text-8xl text-gray-100">
+                    <h1 className="text-5xl sm:text-6xl text-gray-100">
                       {item?.current?.temp_c}
                       <span>
                         °<sup>c</sup>

@@ -32,7 +32,7 @@ export default function Home() {
 
 
   async function fetchCitiesWeatherData(specificCity) {
-    const url = `https://api.weatherapi.com/v1/current.json?key=7a4754754d94433b9ce181533240911&q=${specificCity}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${specificCity}`;
 
     const response = await fetch(url);
     if (!response.ok) {
@@ -77,7 +77,7 @@ export default function Home() {
     const fetchWeather = async () => {
       try {
         const response = await fetch(
-          `http://api.weatherapi.com/v1/current.json?key=7a4754754d94433b9ce181533240911&q=${city}&aqi=no`
+          `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}&aqi=no`
         );
 
         if (!response.ok) {
@@ -98,7 +98,7 @@ export default function Home() {
       const days = 7;
 
       const response = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=7a4754754d94433b9ce181533240911&q=${city}&days=${days}`
+        `https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${city}&days=${days}`
       );
       const data = await response.json();
       console.log("week", data);
@@ -181,7 +181,7 @@ export default function Home() {
   return (
     <main className="min-h-screen p-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
-        {/* Left Panel */}
+        {/* Left */}
         <div className="bg-primary-main shadow-sm rounded-xl p-6">
           {/* Search Bar */}
           <div className="relative mb-8">
@@ -243,7 +243,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right Panel */}
+        {/* Right */}
         <div className="md:col-span-2">
           <div
             className="flex flex-row gap-4 cursor-pointer mb-4 pb-2 overflow-x-auto hide-scrollbar scrollbar-thin scrollbar-track-primary-dark scrollbar-thumb-primary-light
@@ -302,7 +302,6 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Weekly Forecast */}
           <div
             className="flex flex-row gap-4 mb-4 pb-2 pt-2 overflow-x-auto scrollbar-thin scrollbar-track-primary-dark scrollbar-thumb-primary-light
     hover:scrollbar-thumb-light

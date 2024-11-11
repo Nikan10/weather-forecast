@@ -25,6 +25,6 @@ Ensure you have the following installed:
 
     npm install
 
-2. **Install Dependencies**
+2. **Running the App**
 
     npm run dev

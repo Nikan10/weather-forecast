@@ -17,7 +17,7 @@ Ensure you have the following installed:
    Begin by cloning the project repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/weather-forecast-app.git
+   git clone https://github.com/Nikan10/weather-forecast.git
 
 ## Starting the project
 
